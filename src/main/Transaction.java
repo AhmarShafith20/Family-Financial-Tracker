@@ -7,9 +7,10 @@ public class Transaction {
 	LocalDate Date;
 	String Description;
 	Money amount;
-	String buyer;
+	// instead of String its Buyer  
+	Buyer buyer;
 	String Category;
-	public Transaction(LocalDate Date,String Description,Money amount,String buyer,String Category) {
+	public Transaction(LocalDate Date,String Description,Money amount,Buyer buyer,String Category) {
 		this.Date = Date;
 		this.Description = Description;
 		this.amount = amount;
@@ -27,8 +28,8 @@ public class Transaction {
 	public Money getAmount(){
 		return amount;
 	}
-	
-	public String getBuyer(){
+	// instead of String its Buyer 
+	public Buyer getBuyer(){
 		return buyer;
 	}
 	
@@ -37,7 +38,7 @@ public class Transaction {
 	}
 	
 	public String toString() {
-		String val = " " +Date + " " + Description + " " + amount + " " + buyer + " " +Category;
+		String val = " " +Date + " " + Description + " " + amount + " " + buyer.getName() + " " + Category;
 		return 	val;
 			
 	}
