@@ -46,18 +46,23 @@ public class InputFiles {
 			String Buyer ="";
 			String category = "";
 			Money cash = new Money(debit,credit,balance); 
-			
+			Buyer buyerObj = null; //Creating buyer object AHMAR SHAAFITH
 			for (int j=0;j<=buyer_max_rows;j++) {
 				XSSFRow buyer_rows = page.getRow(j);
 				if (description.contains(buyer_rows.getCell(0).getStringCellValue())) {
 					Buyer = buyer_rows.getCell(1).getStringCellValue();
 					category = buyer_rows.getCell(2).getStringCellValue();
 					//System.out.println("x: " + buyer +" "+category );
+					buyerObj = new Buyer(buyer); //Assigning variables in the buyerObject AHMAR SHAFITH
 					break;
 				}
 			}
 			list.add(new Transaction(date,description,cash,Buyer,category));
-			
+
+			//list of transaction for that buyer AHMAR SHAFITH
+			if (buyer != null) {
+                buyer.addTransaction(new Transaction(date, description, cash, buyerObj, category));
+            }
 		}
 		workbook.close();
 		book.close();
