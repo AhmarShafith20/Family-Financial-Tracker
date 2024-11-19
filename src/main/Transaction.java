@@ -1,4 +1,5 @@
-package main;
+package team15.fft.model;
+//Contributing authors: S Pathan, A Shafith
 
 import java.time.LocalDate;
 
