@@ -1,6 +1,6 @@
 package main;
 
-//author Shifan
+//author Shifan, GenAi()(chooseFile(), updateTable())
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
