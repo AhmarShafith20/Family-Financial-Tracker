@@ -18,8 +18,9 @@ public class Buyer {
 
     @Override
     public String toString() {
-        return "Buyer: " + name + ", Categories: ";
+        return (this.name != null) ? this.name : "";
     }
+
 }
 
 
