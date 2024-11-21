@@ -1,4 +1,5 @@
-package main;
+package team15.fft.model;
+//Contributing authors: S Pathan, A Shafith
 
 import java.time.LocalDate;
 
@@ -38,9 +39,10 @@ public class Transaction {
 	}
 	
 	public String toString() {
-		String val = " " +Date + " " + Description + " " + amount + " " + buyer.getName() + " " + Category;
-		return 	val;
-			
+	    // Check if buyer is null before accessing getName
+	    return " " + Date + " " + Description + " " + amount + " " + buyer + " " + Category;
 	}
 	
 }
+	
+
