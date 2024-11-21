@@ -1,5 +1,5 @@
 package main;
-//author Shifan
+//author -Shifan, GenAi (showError()) 
 
 import main.InputFiles;
 import java.io.File;
