@@ -9,7 +9,7 @@ A software tool to track and analyze family spending using transaction data.
 - Generate summaries
 
 ## Technologies
-- (C / Python / etc.)
+- Java 
 
 ## How to Run
 1. Compile the program
@@ -19,4 +19,4 @@ A software tool to track and analyze family spending using transaction data.
 Explain folders briefly
 
 ## Author
-Ahmar Shafith
+Ahmar Shafith, Shifan, Steve, Ben
